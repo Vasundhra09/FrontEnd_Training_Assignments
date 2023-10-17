@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Practice</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            margin: 2px;
+            width: 300px;
+            padding: 4px;
+        }
+        input{
+            width: 100%;
+            margin: 3px;
+        }
+        input[type=button]{
+            border: 2px solid pink;
+            width: 100%;
+            background-color: pink;
+            border-radius: 3px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="./Q2_Assignment.html" method="GET">
+            <figure>
+            Product Name: 
+            <input type="text" name="pname" id="pid"><br><br>
+            Unit Price:
+            <input type="text" name="uprice" id="uid"><br><br>
+            Quantity:
+            <input type="text" name="quant" id="qid"><br><br>
+            <input type="button" value="Get Total"  id="button" onclick="submitClick()">
+            <!-- <button >Get Total</button> -->
+            <p>Total Amount: <span id="total">0.00</span></p>
+            </figure>
+        </form>
+    </div>
+    <script>
+        function submitClick(){
+            var obj1 = document.getElementById("uid").value;
+            var obj2 = document.getElementById("qid").value;
+            var totalAmount = obj1*obj2;
+            document.getElementById("total").textContent  = totalAmount;
+        }
+    </script>
+</body>
+</html>

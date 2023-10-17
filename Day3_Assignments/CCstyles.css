@@ -1,0 +1,15 @@
+body{
+    margin: 10px;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+form{
+    width: 525px;
+    padding: 30px;
+}
+fieldset{
+    padding: 20px;
+}
+#inputtxt{
+    width: 100%;
+}
